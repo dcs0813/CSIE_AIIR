@@ -13,7 +13,7 @@ from pathlib import Path
 #======================================================================================================
 ### 載入文件
 #======================================================================================================
-tree = ET.parse( './data/dev/test1.xml' )
+tree = ET.parse( './data/dev/test2.xml' )
 root = tree.getroot()
 
 # 在 windows 10 的 PowerShell 啟用 colorama
@@ -29,6 +29,9 @@ for elem in root.iter( 'PubmedArticle' ):
 
 # 計算載入的 pubmed 檔案中的文章數
 countPubmedArticle = len( pubmedElement )
+
+# 定義要處理的文章區塊
+processedPBElement = pubmedElement[2]
 
 #======================================================================================================
 ### 相關函數定義
@@ -86,9 +89,9 @@ def keyWordsSearch( queryContent, queryText ):
 				renderedText = renderedText + contentBeforeKeyword + keywordMatched
 
 	else:
-		renderedText = 'no matched words !!'
+		renderedText = Fore.WHITE + Back.RED + 'no matched words !!'
 
-	return renderedText
+	return renderedText + '\r\n'
 
 def abstractInfo( pubmedElement ):
 	abstract = []
@@ -128,36 +131,6 @@ def pubmedElementInfo( pubmedElement ):
 	return characterCountAll, wordCountAll, allContent
 
 #======================================================================================================
-### 對組出的內容作關鍵字搜尋 :: ArticleTitle, Abstract
-###
-### composedContent[0] ==> articleTitle
-### composedContent[1] ==> abstract
-### composedContent[2] ==> queryContent
-###
-#====================================================================================================== 
-composedContent = composeQueryContent( pubmedElement[1] )
-
-queryContent = composedContent[2]
-queryText = 'SOFA'
-
-queryResult = keyWordsSearch( queryContent, queryText )
-
-print( queryResult )
-
-sys.exit()
-
-#======================================================================================================
-### 處理 abstract 相關數字統計
-#======================================================================================================
-abstractInfo = abstractInfo( pubmedElement[1] )
-
-abstract = abstractInfo[0]
-abstractParagraphCount = len( abstract )
-abstractSentenceCount = abstractInfo[1]
-
-print( abstractInfo )
-
-#======================================================================================================
 ### 處理內容相關資訊取得
 ###
 ### pmeInfo[0] ==> characterCountAll
@@ -165,7 +138,59 @@ print( abstractInfo )
 ### pmeInfo[2] ==> allContent
 ###
 #======================================================================================================
-pmeInfo = pubmedElementInfo( pubmedElement[1] )
-print( pmeInfo )
+pmeInfo = pubmedElementInfo( processedPBElement )
+
+#======================================================================================================
+### 處理 abstract 相關數字統計
+#======================================================================================================
+abstractInfo = abstractInfo( processedPBElement )
+
+abstract = abstractInfo[0]
+abstractParagraphCount = len( abstract )
+abstractSentenceCount = abstractInfo[1]
+
+#======================================================================================================
+### 對組出的內容作關鍵字搜尋 :: ArticleTitle, Abstract
+###
+### composedContent[0] ==> articleTitle
+### composedContent[1] ==> abstract
+### composedContent[2] ==> queryContent
+###
+#====================================================================================================== 
+queryText = 'COVID'
+composedContent = composeQueryContent( processedPBElement )
+
+# 對文章標題作搜尋
+titleContent = composedContent[0]
+titleQueryResult = keyWordsSearch( titleContent, queryText )
+
+# 對文章內容作搜尋
+abstractContent = composedContent[1]
+abstractQueryResult = keyWordsSearch( abstractContent, queryText )
+
+#======================================================================================================
+### 輸出文章相關摘要資訊
+#======================================================================================================
+# 檔案中的文章數
+print( '\n' )
+print( '檔案中的文章數 ==> ' + str( countPubmedArticle ) )
+print( '目前處理的文章標題 ==> ' + composedContent[0] )
+print( '--------------------------------------------------------------------------------------------------------------' )
+
+# 內容相關資訊
+print( '文章總字元數 ==> ' + str( pmeInfo[0] ) )
+print( '文章總字數 ==> ' + str( pmeInfo[1] ) )
+print( '--------------------------------------------------------------------------------------------------------------' )
+
+# abstract 相關資訊
+print( 'abstract 句子數 ==> ' + str( abstractSentenceCount ) )
+print( 'abstract 段落數 ==> ' + str( abstractParagraphCount ) )
+print( '--------------------------------------------------------------------------------------------------------------' )
+
+# keywords search 相關資訊
+print( 'ArticleTitle / Abstract 關鍵字搜尋 ==> ' + queryText )
+print( '\n' )
+print( titleQueryResult )
+print( abstractQueryResult )
 
 sys.exit()
