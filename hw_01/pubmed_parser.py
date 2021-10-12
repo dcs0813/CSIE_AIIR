@@ -13,7 +13,7 @@ from pathlib import Path
 #======================================================================================================
 ### 載入文件
 #======================================================================================================
-tree = ET.parse( './data/dev/test2.xml' )
+tree = ET.parse( './data/dev/test3.xml' )
 root = tree.getroot()
 
 # 在 windows 10 的 PowerShell 啟用 colorama
@@ -31,7 +31,7 @@ for elem in root.iter( 'PubmedArticle' ):
 countPubmedArticle = len( pubmedElement )
 
 # 定義要處理的文章區塊
-processedPBElement = pubmedElement[2]
+processedPBElement = pubmedElement[0]
 
 #======================================================================================================
 ### 相關函數定義
@@ -89,7 +89,7 @@ def keyWordsSearch( queryContent, queryText ):
 				renderedText = renderedText + contentBeforeKeyword + keywordMatched
 
 	else:
-		renderedText = Fore.WHITE + Back.RED + 'no matched words !!'
+		renderedText = Fore.WHITE + Back.RED + 'no matched words !!' + '\n' + Fore.RESET + Back.RESET + queryContent
 
 	return renderedText + '\r\n'
 
@@ -157,7 +157,7 @@ abstractSentenceCount = abstractInfo[1]
 ### composedContent[2] ==> queryContent
 ###
 #====================================================================================================== 
-queryText = 'COVID'
+queryText = '2019 ('
 composedContent = composeQueryContent( processedPBElement )
 
 # 對文章標題作搜尋
