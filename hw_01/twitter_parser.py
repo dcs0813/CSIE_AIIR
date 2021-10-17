@@ -18,7 +18,7 @@ init( convert = True )
 #======================================================================================================
 ### 載入文件 & 讀取內容
 #======================================================================================================
-file = open( './data/dev/test6.json', encoding="utf-8" )
+file = open( './data/test/test4.json', encoding="utf-8" )
 loadedContent = json.load( file )
 
 #======================================================================================================
@@ -71,7 +71,7 @@ print( '【 檔案中的 tweet 數 】 ==> ' + str( len( loadedContent ) ) )
 print( '\r\n' )
 
 i = 1
-queryText = 'to'
+queryText = 'COVID'
 
 for jsonSet in loadedContent:
 	print( Fore.RESET + Back.RESET + '第 ' + str( i ) + ' 則 :' + '\n' )

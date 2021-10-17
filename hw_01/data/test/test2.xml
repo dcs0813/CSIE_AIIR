@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+   <PubmedArticle>
+      <MedlineCitation Owner="NLM" Status="MEDLINE">
+         <PMID Version="1">33342635</PMID>
+         <DateCompleted>
+            <Year>2021</Year>
+            <Month>01</Month>
+            <Day>27</Day>
+         </DateCompleted>
+         <DateRevised>
+            <Year>2021</Year>
+            <Month>05</Month>
+            <Day>21</Day>
+         </DateRevised>
+         <Article PubModel="Print-Electronic">
+            <Journal>
+               <ISSN IssnType="Electronic">1873-2518</ISSN>
+               <JournalIssue CitedMedium="Internet">
+                  <Volume>39</Volume>
+                  <Issue>4</Issue>
+                  <PubDate>
+                     <Year>2021</Year>
+                     <Month>01</Month>
+                     <Day>22</Day>
+                  </PubDate>
+               </JournalIssue>
+               <Title>Vaccine</Title>
+               <ISOAbbreviation>Vaccine</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Epidemiology of COVID-19 infection in young children under five years: A systematic review and meta-analysis.</ArticleTitle>
+            <Pagination>
+               <MedlinePgn>667-677</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0264-410X(20)31570-X</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.vaccine.2020.11.078</ELocationID>
+            <Abstract>
+               <AbstractText Label="INTRODUCTION">Emerging evidence suggests young children are at greater risk of COVID-19 infection than initially predicted. However, a comprehensive understanding of epidemiology of COVID-19 infection in young children under five years, the most at-risk age-group for respiratory infections, remain unclear. We conducted a systematic review and meta-analysis of epidemiological and clinical characteristics of COVID-19 infection in children under five years.</AbstractText>
+               <AbstractText Label="METHOD">Following the Preferred Reporting Items for Systematic Reviews and Meta-analyses , we searched several electronic databases (Pubmed, EMBASE, Web of Science, and Scopus) with no language restriction for published epidemiological studies and case-reports reporting laboratory-confirmed COVID-19 infection in children under five years until June 4, 2020. We assessed pooled prevalence for key demographics and clinical characteristics using Freeman-Tukey double arcsine random-effects model for studies except case-reports. We evaluated risk of bias separately for case-reports and other studies.</AbstractText>
+               <AbstractText Label="RESULTS">We identified 1,964 articles, of which, 65 articles were eligible for systematic review that represented 1,214 children younger than five years with laboratory-confirmed COVID-19 infection. The pooled estimates showed that 50% young COVID-19 cases were infants (95% CI: 36% - 63%, 27 studies); 53% were male (95% CI: 41% - 65%, 24 studies); 43% were asymptomatic (95% CI: 15% - 73%, 9 studies) and 7% (95% CI: 0% - 30%, 5 studies) had severe disease that required intensive-care-unit admission. Of 139 newborns from COVID-19 infected mothers, five (3.6%) were COVID-19 positive. There was only one death recorded.</AbstractText>
+               <AbstractText Label="DISCUSSION">This systematic review reports the largest number of children younger than five years with COVID-19 infection till date. Our meta-analysis shows nearly half of young COVID-19 cases were asymptomatic and half were infants, highlighting the need for ongoing surveillance to better understand the epidemiology, clinical pattern, and transmission of COVID-19 to develop effective preventive strategies against COVID-19 disease in young paediatric population.</AbstractText>
+               <CopyrightInformation>Copyright © 2020 Elsevier Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+               <Author ValidYN="Y">
+                  <LastName>Bhuiyan</LastName>
+                  <ForeName>Mejbah Uddin</ForeName>
+                  <Initials>MU</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Wesfarmers Centre of Vaccines and Infectious Diseases, Telethon Kids Institute, Western Australia, Australia. Electronic address: Mejbah.Bhuiyan@telethonkids.org.au.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Stiboy</LastName>
+                  <ForeName>Eunice</ForeName>
+                  <Initials>E</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>School of Public Health, Faculty of Medicine and Health, The University of Sydney, New South Wales, Australia.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Hassan</LastName>
+                  <ForeName>Md Zakiul</ForeName>
+                  <Initials>MZ</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Program for Emerging Infections, Infectious Diseases Division, icddr,b, Bangladesh.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Chan</LastName>
+                  <ForeName>Mei</ForeName>
+                  <Initials>M</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>School of Women's and Children's Health, Faculty of Medicine, University of New South Wales, Sydney, New South Wales, Australia.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Islam</LastName>
+                  <ForeName>Md Saiful</ForeName>
+                  <Initials>MS</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Program for Emerging Infections, Infectious Diseases Division, icddr,b, Bangladesh; School of Public Health and Community Medicine, Faculty of Medicine, University of New South Wales, Sydney, New South Wales, Australia.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Haider</LastName>
+                  <ForeName>Najmul</ForeName>
+                  <Initials>N</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>The Royal Veterinary College, University of London, Hatfield, Hertfordshire, AL9 7TA, UK.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Jaffe</LastName>
+                  <ForeName>Adam</ForeName>
+                  <Initials>A</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>School of Women's and Children's Health, Faculty of Medicine, University of New South Wales, Sydney, New South Wales, Australia; Respiratory Department, Sydney Children's Hospital, Sydney, New South Wales, Australia.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Homaira</LastName>
+                  <ForeName>Nusrat</ForeName>
+                  <Initials>N</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>School of Women's and Children's Health, Faculty of Medicine, University of New South Wales, Sydney, New South Wales, Australia; Respiratory Department, Sydney Children's Hospital, Sydney, New South Wales, Australia.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+               <PublicationType UI="D016428">Journal Article</PublicationType>
+               <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+               <PublicationType UI="D000078182">Systematic Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+               <Year>2020</Year>
+               <Month>12</Month>
+               <Day>05</Day>
+            </ArticleDate>
+         </Article>
+         <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Vaccine</MedlineTA>
+            <NlmUniqueID>8406899</NlmUniqueID>
+            <ISSNLinking>0264-410X</ISSNLinking>
+         </MedlineJournalInfo>
+         <CitationSubset>IM</CitationSubset>
+         <MeshHeadingList>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D058070">Asymptomatic Diseases</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000086382">COVID-19</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+               <QualifierName MajorTopicYN="N" UI="Q000473">pathology</QualifierName>
+               <QualifierName MajorTopicYN="Y" UI="Q000635">transmission</QualifierName>
+               <QualifierName MajorTopicYN="N" UI="Q000821">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D002675">Child, Preschool</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D062665">Epidemiological Monitoring</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D015994">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D007223">Infant</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D007231">Infant, Newborn</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D018445">Infectious Disease Transmission, Vertical</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000706">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D007362">Intensive Care Units</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D008297">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D009035">Mothers</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D017594">Publication Bias</DescriptorName>
+               <QualifierName MajorTopicYN="N" UI="Q000706">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000086402">SARS-CoV-2</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000472">pathogenicity</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D012720">Severity of Illness Index</DescriptorName>
+            </MeshHeading>
+         </MeshHeadingList>
+         <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">COVID-19</Keyword>
+            <Keyword MajorTopicYN="Y">COVID-19 newborns</Keyword>
+            <Keyword MajorTopicYN="Y">Children younger than five years</Keyword>
+         </KeywordList>
+         <CoiStatement>Declaration of Competing Interest The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</CoiStatement>
+      </MedlineCitation>
+      <PubmedData>
+         <History>
+            <PubMedPubDate PubStatus="received">
+               <Year>2020</Year>
+               <Month>08</Month>
+               <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+               <Year>2020</Year>
+               <Month>11</Month>
+               <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+               <Year>2020</Year>
+               <Month>11</Month>
+               <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+               <Year>2020</Year>
+               <Month>12</Month>
+               <Day>22</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+               <Year>2021</Year>
+               <Month>1</Month>
+               <Day>28</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+               <Year>2020</Year>
+               <Month>12</Month>
+               <Day>21</Day>
+               <Hour>5</Hour>
+               <Minute>36</Minute>
+            </PubMedPubDate>
+         </History>
+         <PublicationStatus>ppublish</PublicationStatus>
+         <ArticleIdList>
+            <ArticleId IdType="pubmed">33342635</ArticleId>
+            <ArticleId IdType="pii">S0264-410X(20)31570-X</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.vaccine.2020.11.078</ArticleId>
+            <ArticleId IdType="pmc">PMC7833125</ArticleId>
+         </ArticleIdList>
+         <ReferenceList>
+            <Reference>
+               <Citation>Pediatr Pulmonol. 2020 Jun;55(6):1430-1432</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32270592</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Paediatr Child Health. 1999 Oct;4(7):490-502</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">20212963</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Infect Dis J. 2020 Jul;39(7):e140-e142</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32384398</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Infect Dis. 2020 Jun;20(6):689-696</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32220650</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Obstet Gynecol. 2020 Jul;136(1):65-67</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32332320</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Child Adolesc Health. 2020 Jun;4(6):414-416</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32458804</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Fetal Pediatr Pathol. 2020 Jun;39(3):246-250</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32238084</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>EClinicalMedicine. 2020 Jun 26;24:100433</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32766542</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Infect Dis J. 2020 Jul;39(7):e95-e99</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32379191</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Science. 2020 Dec 11;370(6522):1339-1343</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">33159009</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>JAMA Pediatr. 2020 Sep 1;174(9):882-889</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32320004</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>JAMA Pediatr. 2020 Sep 1;174(9):868-873</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32392288</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Viruses. 2020 Feb 10;12(2):</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32050635</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Infect Dis. 2020 Sep 12;71(6):1547-1551</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32112072</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Cureus. 2020 Apr 3;12(4):e7520</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32377468</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>MMWR Morb Mortal Wkly Rep. 2020 Apr 10;69(14):422-426</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32271728</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Apr 2;382(14):1370-1371</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32163697</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Infect Dis (Lond). 2020 Jun;52(6):427-429</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32233816</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Arch Pediatr. 2020 Jul;27(5):275-276</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32402433</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Infect. 2020 Jul;81(1):e40-e44</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32294503</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhong Nan Da Xue Xue Bao Yi Xue Ban. 2020 Mar 28;45(3):236-242</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32386013</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMC Pediatr. 2020 May 18;20(1):227</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32423435</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Clin Epidemiol. 2012 Sep;65(9):934-9</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">22742910</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Microbiol Rev. 2010 Jan;23(1):74-98</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">20065326</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhonghua Er Ke Za Zhi. 2020 Mar 2;58(3):182-184</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32135587</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMC Infect Dis. 2020 May 7;20(1):329</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32381073</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Child Adolesc Health. 2020 May;4(5):405-406</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32213326</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Pulmonol. 2020 Jun;55(6):1424-1429</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32259403</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Proc Natl Acad Sci U S A. 2020 Oct 6;117(40):24620-24626</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32883878</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Mar 7;395(10226):809-815</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32151335</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>JAMA. 2020 May 12;323(18):1846-1848</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32215581</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Front Pediatr. 2020 May 12;8:258</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32574284</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Front Med. 2020 Apr;14(2):193-198</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32285380</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Emerg Microbes Infect. 2020 Dec;9(1):707-713</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32208917</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhongguo Dang Dai Er Ke Za Zhi. 2020 Mar;22(3):211-214</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32204755</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Apr 23;382(17):1663-1665</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32187458</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>World J Pediatr. 2020 Jun;16(3):251-259</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32193831</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Diagn Interv Radiol. 2020 May;26(3):262-263</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32209502</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Health Aff (Millwood). 2016 Feb;35(2):309-16</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">26858385</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 May 7;382(19):e49</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32320556</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Pulmonol. 2020 May;55(5):1169-1174</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32134205</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Clin Virol. 2020 Jun;127:104353</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32302953</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Am J Perinatol. 2020 Jun;37(8):861-865</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32305046</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Ann Emerg Med. 2000 Dec;36(6):602-14</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">11097701</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Infect. 2020 May;80(5):e7-e13</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32171865</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Clin Virol. 2020 Jun;127:104377</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32361323</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Diabetes Metab Syndr. 2020 Jul - Aug;14(4):547-554</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32408119</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMJ Evid Based Med. 2018 Apr;23(2):60-63</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">29420178</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Infect Dis. 2020 May 11;221(11):1775-1781</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32179908</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Cureus. 2020 May 17;12(5):e8165</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32432015</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Infect Public Health. 2020 May;13(5):818-820</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32305459</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMC Med. 2020 May 6;18(1):123</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32370747</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhonghua Er Ke Za Zhi. 2020 Feb 17;58(0):E009</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32065520</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhongguo Dang Dai Er Ke Za Zhi. 2020 Mar;22(3):221-225</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32204757</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Microbiol Immunol Infect. 2020 Jun;53(3):473-480</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32276848</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Infect Dis. 2020 Nov 19;71(16):2305-2306</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32433729</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Int J Infect Dis. 2020 May;94:125-127</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32304822</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Front Pediatr. 2020 Mar 16;8:104</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32266184</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Microbiol Immunol Infect. 2020 Jun;53(3):373-376</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32224116</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Transl Pediatr. 2020 Feb;9(1):51-60</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32154135</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Comput Assist Tomogr. 2020 May/Jun;44(3):311-313</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32217900</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Allergy Clin Immunol. 2020 Jul;146(1):101-109.e1</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32437740</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Paediatr Child Health. 2020 Apr;56(4):650-651</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32202014</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Arch Dis Child Fetal Neonatal Ed. 2005 Nov;90(6):F461-5</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">16244207</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Am J Obstet Gynecol. 2012 Sep;207(3 Suppl):S3-8</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">22920056</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Emerg Infect Dis. 2020 Jun;26(6):1335-1336</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32134381</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Mar 28;395(10229):1033-1034</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32192578</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Radiol. 2020 May;50(6):796-799</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32162081</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>JAMA. 2020 Apr 7;323(13):1313-1314</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32058570</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Cell Host Microbe. 2020 Jun 10;27(6):879-882.e2</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32359396</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Chem Lab Med. 2020 Jun 25;58(7):1160-1161</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32301747</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Nov 7;396(10261):1467-1469</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32971042</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Semin Arthritis Rheum. 2015 Feb;44(4):405-10</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">25200945</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Zhongguo Dang Dai Er Ke Za Zhi. 2020 Mar;22(3):215-220</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32204756</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur Respir J. 2020 Jun 18;55(6):</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32269087</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Pediatric Infect Dis Soc. 2020 Jul 13;9(3):362-365</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32441753</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Nat Med. 2020 Apr;26(4):502-505</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32284613</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Clin Virol. 2020 Jun;127:104356</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32302955</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Jun 6;395(10239):1741-1743</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32410759</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur J Public Health. 2020 Apr 1;30(2):265-269</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">31373636</ArticleId>
+               </ArticleIdList>
+            </Reference>
+         </ReferenceList>
+      </PubmedData>
+   </PubmedArticle>
+</PubmedArticleSet>

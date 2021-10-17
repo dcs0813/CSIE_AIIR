@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+   <PubmedArticle>
+      <MedlineCitation Owner="NLM" Status="MEDLINE">
+         <PMID Version="1">33053381</PMID>
+         <DateCompleted>
+            <Year>2020</Year>
+            <Month>12</Month>
+            <Day>21</Day>
+         </DateCompleted>
+         <DateRevised>
+            <Year>2021</Year>
+            <Month>01</Month>
+            <Day>10</Day>
+         </DateRevised>
+         <Article PubModel="Print-Electronic">
+            <Journal>
+               <ISSN IssnType="Electronic">1879-0712</ISSN>
+               <JournalIssue CitedMedium="Internet">
+                  <Volume>889</Volume>
+                  <PubDate>
+                     <Year>2020</Year>
+                     <Month>Dec</Month>
+                     <Day>15</Day>
+                  </PubDate>
+               </JournalIssue>
+               <Title>European journal of pharmacology</Title>
+               <ISOAbbreviation>Eur J Pharmacol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Treatment for COVID-19: An overview.</ArticleTitle>
+            <Pagination>
+               <MedlinePgn>173644</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0014-2999(20)30736-6</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.ejphar.2020.173644</ELocationID>
+            <Abstract>
+               <AbstractText>Coronavirus disease 2019 (COVID-19) is an infectious disease caused by coronavirus-2 (SARS-CoV-2) that causes a severe acute respiratory syndrome, a characteristic hyperinflammatory response, vascular damage, microangiopathy, angiogenesis and widespread thrombosis. Four stages of COVID-19 have been identified: the first stage is characterised by upper respiratory tract infection; the second by the onset of dyspnoea and pneumonia; the third by a worsening clinical scenario dominated by a cytokine storm and the consequent hyperinflammatory state; and the fourth by death or recovery. Currently, no treatment can act specifically against the SARS-CoV-2 infection. Based on the pathological features and different clinical phases of COVID-19, particularly in patients with moderate to severe COVID-19, the classes of drugs used are antiviral agents, inflammation inhibitors/antirheumatic drugs, low molecular weight heparins, plasma, and hyperimmune immunoglobulins. During this emergency period of the COVID-19 outbreak, clinical researchers are using and testing a variety of possible treatments. Based on these premises, this review aims to discuss the most updated pharmacological treatments to effectively act against the SARS-CoV-2 infection and support researchers and clinicians in relation to any current and future developments in curing COVID-19 patients.</AbstractText>
+               <CopyrightInformation>Copyright © 2020 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+               <Author ValidYN="Y">
+                  <LastName>Stasi</LastName>
+                  <ForeName>Cristina</ForeName>
+                  <Initials>C</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Epidemiology Unit, Tuscany Regional Health Agency, Florence, Italy; Department of Experimental and Clinical Medicine, Careggi University Hospital, Florence, Italy. Electronic address: cristina.stasi@gmail.com.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Fallani</LastName>
+                  <ForeName>Silvia</ForeName>
+                  <Initials>S</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Epidemiology Unit, Tuscany Regional Health Agency, Florence, Italy.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Voller</LastName>
+                  <ForeName>Fabio</ForeName>
+                  <Initials>F</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Epidemiology Unit, Tuscany Regional Health Agency, Florence, Italy.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Silvestri</LastName>
+                  <ForeName>Caterina</ForeName>
+                  <Initials>C</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Epidemiology Unit, Tuscany Regional Health Agency, Florence, Italy.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+               <PublicationType UI="D016428">Journal Article</PublicationType>
+               <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+               <Year>2020</Year>
+               <Month>10</Month>
+               <Day>11</Day>
+            </ArticleDate>
+         </Article>
+         <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Eur J Pharmacol</MedlineTA>
+            <NlmUniqueID>1254354</NlmUniqueID>
+            <ISSNLinking>0014-2999</ISSNLinking>
+         </MedlineJournalInfo>
+         <SupplMeshList>
+            <SupplMeshName Type="Protocol" UI="C000705127">COVID-19 drug treatment</SupplMeshName>
+         </SupplMeshList>
+         <CitationSubset>IM</CitationSubset>
+         <MeshHeadingList>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000086382">COVID-19</DescriptorName>
+               <QualifierName MajorTopicYN="N" UI="Q000175">diagnosis</QualifierName>
+               <QualifierName MajorTopicYN="Y" UI="Q000188">drug therapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D058873">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000086402">SARS-CoV-2</DescriptorName>
+               <QualifierName MajorTopicYN="N" UI="Q000187">drug effects</QualifierName>
+            </MeshHeading>
+         </MeshHeadingList>
+         <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Antirheumatic drugs</Keyword>
+            <Keyword MajorTopicYN="N">Antiviral agents</Keyword>
+            <Keyword MajorTopicYN="N">COVID-19</Keyword>
+            <Keyword MajorTopicYN="N">Inflammation inhibitors</Keyword>
+            <Keyword MajorTopicYN="N">Low molecular weight heparins</Keyword>
+            <Keyword MajorTopicYN="N">SARS-CoV-2</Keyword>
+         </KeywordList>
+      </MedlineCitation>
+      <PubmedData>
+         <History>
+            <PubMedPubDate PubStatus="received">
+               <Year>2020</Year>
+               <Month>07</Month>
+               <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+               <Year>2020</Year>
+               <Month>10</Month>
+               <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+               <Year>2020</Year>
+               <Month>10</Month>
+               <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+               <Year>2020</Year>
+               <Month>10</Month>
+               <Day>15</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+               <Year>2020</Year>
+               <Month>12</Month>
+               <Day>22</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+               <Year>2020</Year>
+               <Month>10</Month>
+               <Day>14</Day>
+               <Hour>20</Hour>
+               <Minute>5</Minute>
+            </PubMedPubDate>
+         </History>
+         <PublicationStatus>ppublish</PublicationStatus>
+         <ArticleIdList>
+            <ArticleId IdType="pubmed">33053381</ArticleId>
+            <ArticleId IdType="pii">S0014-2999(20)30736-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.ejphar.2020.173644</ArticleId>
+            <ArticleId IdType="pmc">PMC7548059</ArticleId>
+         </ArticleIdList>
+         <ReferenceList>
+            <Reference>
+               <Citation>Science. 2020 Jun 19;368(6497):1331-1335</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32321856</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 May 7;382(19):1787-1799</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32187464</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Cochrane Database Syst Rev. 2020 May 14;5:CD013600</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32406927</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Ther Adv Respir Dis. 2020 Jan-Dec;14:1753466620926853</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32436445</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Feb 15;395(10223):e30-e31</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32032529</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Nat Med. 2020 Jun;26(6):845-848</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32350462</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Nov 5;383(19):1827-1837</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32459919</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Rheumatol. 2020 Aug;2(8):e474-e484</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32835257</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Rheumatol. 2020 Jul;2(7):e379-e381</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32835233</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Rheumatol. 2020 Sep;2(9):e549-e556</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32838307</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Feb 15;395(10223):497-506</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">31986264</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Thromb Haemost. 2020 May;18(5):1094-1099</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32220112</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Jun 11;382(24):2327-2336</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32275812</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Jul 17;:</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32678530</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>JAMA. 2020 Apr 28;323(16):1582-1589</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32219428</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Infect. 2020 Oct;81(4):647-679</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32592703</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Endocrinol Invest. 2020 Aug;43(8):1141-1147</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32335855</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Pediatr Allergy Immunol. 2020 Jul;31(5):454-470</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32359201</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 May 22;:</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32450107</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Mar 28;395(10229):1033-1034</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32192578</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Nov 5;383(19):1813-1826</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32445440</ArticleId>
+               </ArticleIdList>
+            </Reference>
+         </ReferenceList>
+      </PubmedData>
+   </PubmedArticle>
+</PubmedArticleSet>

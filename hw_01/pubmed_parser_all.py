@@ -16,7 +16,7 @@ from pathlib import Path
 #======================================================================================================
 ### 載入文件
 #======================================================================================================
-tree = ET.parse( './data/dev/test3.xml' )
+tree = ET.parse( './data/test/test1.xml' )
 root = tree.getroot()
 
 # 在 windows 10 的 PowerShell 啟用 colorama
@@ -136,7 +136,7 @@ print( '【 檔案中的文章數 】 ==> ' + str( countPubmedArticle ) + '\r\n'
 
 # 定義變數
 i = 1
-queryText = 'of '
+queryText = 'COVID'
 
 # 進行內容的遞迴處理
 for pmElement in pubmedElement:

@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+   <PubmedArticle>
+      <MedlineCitation Owner="NLM" Status="MEDLINE">
+         <PMID Version="1">32512530</PMID>
+         <DateCompleted>
+            <Year>2020</Year>
+            <Month>12</Month>
+            <Day>10</Day>
+         </DateCompleted>
+         <DateRevised>
+            <Year>2021</Year>
+            <Month>01</Month>
+            <Day>10</Day>
+         </DateRevised>
+         <Article PubModel="Print-Electronic">
+            <Journal>
+               <ISSN IssnType="Electronic">1876-2026</ISSN>
+               <JournalIssue CitedMedium="Internet">
+                  <Volume>53</Volume>
+                  <PubDate>
+                     <Year>2020</Year>
+                     <Month>Oct</Month>
+                  </PubDate>
+               </JournalIssue>
+               <Title>Asian journal of psychiatry</Title>
+               <ISOAbbreviation>Asian J Psychiatr</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Neuropsychiatric aspects of COVID-19 pandemic: A selective review.</ArticleTitle>
+            <Pagination>
+               <MedlinePgn>102188</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1876-2018(20)30300-2</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.ajp.2020.102188</ELocationID>
+            <Abstract>
+               <AbstractText>Corona virus disease (COVID-19) has been declared as a controllable pandemic by the World Health Organization (WHO). COVID-19 though is a predominantly respiratory illness; it can also affect brain and other organs like kidneys, heart and liver. Neuropsychiatric manifestations are common during viral pandemics but are not effectively addressed. Fever and cough are common symptoms only in infected individuals but headache and sleep disturbances are common even in uninfected general public. In this selective review, the authors report the available evidence of neuropsychiatric morbidity during the current COVID-19 crisis. The authors also discuss the postulated neuronal mechanisms of the corona virus infection sequelae.</AbstractText>
+               <CopyrightInformation>Copyright © 2020 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+               <Author ValidYN="Y">
+                  <LastName>Dinakaran</LastName>
+                  <ForeName>Damodharan</ForeName>
+                  <Initials>D</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Department of Psychiatry, National Institute of Mental Health And Neurosciences (NIMHANS), India. Electronic address: dina.nimhans@gmail.com.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Manjunatha</LastName>
+                  <ForeName>Narayana</ForeName>
+                  <Initials>N</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Department of Psychiatry, National Institute of Mental Health And Neurosciences (NIMHANS), India.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Naveen Kumar</LastName>
+                  <ForeName>Channaveerachari</ForeName>
+                  <Initials>C</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Department of Psychiatry, National Institute of Mental Health And Neurosciences (NIMHANS), India.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+               <Author ValidYN="Y">
+                  <LastName>Suresh</LastName>
+                  <ForeName>Bada Math</ForeName>
+                  <Initials>BM</Initials>
+                  <AffiliationInfo>
+                     <Affiliation>Department of Psychiatry, National Institute of Mental Health And Neurosciences (NIMHANS), India.</Affiliation>
+                  </AffiliationInfo>
+               </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+               <PublicationType UI="D016428">Journal Article</PublicationType>
+               <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+               <Year>2020</Year>
+               <Month>05</Month>
+               <Day>30</Day>
+            </ArticleDate>
+         </Article>
+         <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Asian J Psychiatr</MedlineTA>
+            <NlmUniqueID>101517820</NlmUniqueID>
+            <ISSNLinking>1876-2018</ISSNLinking>
+         </MedlineJournalInfo>
+         <CitationSubset>IM</CitationSubset>
+         <MeshHeadingList>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="Y" UI="D000086382">COVID-19</DescriptorName>
+               <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+               <QualifierName MajorTopicYN="N" UI="Q000503">physiopathology</QualifierName>
+               <QualifierName MajorTopicYN="N" UI="Q000523">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D001523">Mental Disorders</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000821">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D009422">Nervous System Diseases</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000821">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D058027">Neuropsychiatry</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+               <DescriptorName MajorTopicYN="N" UI="D000086402">SARS-CoV-2</DescriptorName>
+               <QualifierName MajorTopicYN="Y" UI="Q000472">pathogenicity</QualifierName>
+            </MeshHeading>
+         </MeshHeadingList>
+         <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">COVID-19</Keyword>
+            <Keyword MajorTopicYN="N">Delirium</Keyword>
+            <Keyword MajorTopicYN="N">Neuroinvasion</Keyword>
+            <Keyword MajorTopicYN="N">Neurology</Keyword>
+            <Keyword MajorTopicYN="N">Neuropsychiatry</Keyword>
+         </KeywordList>
+      </MedlineCitation>
+      <PubmedData>
+         <History>
+            <PubMedPubDate PubStatus="received">
+               <Year>2020</Year>
+               <Month>04</Month>
+               <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+               <Year>2020</Year>
+               <Month>05</Month>
+               <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+               <Year>2020</Year>
+               <Month>05</Month>
+               <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+               <Year>2020</Year>
+               <Month>6</Month>
+               <Day>9</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+               <Year>2020</Year>
+               <Month>12</Month>
+               <Day>15</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+               <Year>2020</Year>
+               <Month>6</Month>
+               <Day>9</Day>
+               <Hour>6</Hour>
+               <Minute>0</Minute>
+            </PubMedPubDate>
+         </History>
+         <PublicationStatus>ppublish</PublicationStatus>
+         <ArticleIdList>
+            <ArticleId IdType="pubmed">32512530</ArticleId>
+            <ArticleId IdType="pii">S1876-2018(20)30300-2</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.ajp.2020.102188</ArticleId>
+            <ArticleId IdType="pmc">PMC7261092</ArticleId>
+         </ArticleIdList>
+         <ReferenceList>
+            <Reference>
+               <Citation>JAMA. 2020 Apr 7;323(13):1239-1242</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32091533</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Med Virol. 2020 Jun;92(6):552-555</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32104915</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Neurology. 2020 Jun 2;94(22):959-969</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32284362</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Med (Lond). 2020 May 5;:</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32371417</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Jul;87:34-39</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32298803</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Crit Care. 2020 Apr 28;24(1):176</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32345343</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Neurology. 2020 Aug 4;95(5):221-223</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32358218</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Jul;87:18-22</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32240762</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Biosci Trends. 2020 May 21;14(2):139-143</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32321905</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Med Virol. 2020 Oct;92(10):1782-1784</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32293714</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Psychiatry Res. 2020 Jul;289:113052</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32388178</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur J Neurol. 2020 Sep;27(9):e33</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32443166</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Rev Neurol (Paris). 2020 Jun;176(6):518-519</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32359804</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Rev Neurol (Paris). 2020 Jun;176(6):516-518</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32334841</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur J Neurol. 2020 Sep;27(9):e41-e42</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32333819</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Viruses. 2019 Dec 20;12(1):</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">31861926</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Age Ageing. 2020 Jul 1;49(4):497-498</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32374367</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Radiology. 2020 Aug;296(2):E119-E120</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32228363</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur Arch Otorhinolaryngol. 2020 Aug;277(8):2251-2261</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32253535</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Int J Geriatr Psychiatry. 2020 Jul;35(7):803-805</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32363628</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Clin Infect Dis. 2020 Jul 28;71(15):762-768</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32161940</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Virus Res. 2014 Dec 19;194:145-58</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">25281913</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Ther Adv Neurol Disord. 2020 Mar 28;13:1756286420917830</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32284735</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Stroke Vasc Neurol. 2020 Sep;5(3):279-284</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32616524</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Cureus. 2020 Mar 21;12(3):e7352</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32328364</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Epilepsia. 2020 Jun;61(6):1166-1173</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32353184</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Br J Psychiatry. 2020 Jul;217(1):351</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32270760</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Jul;87:33</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32305574</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Schizophr Res. 2020 Aug;222:79-87</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32389615</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Travel Med Infect Dis. 2020 Jul - Aug;36:101642</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32220634</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Neurol. 2020 Jul;267(7):1877-1879</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32333166</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Biol Pharm Bull. 2015;38(10):1638-44</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">26424023</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Neurol Neuroimmunol Neuroinflamm. 2020 Apr 29;7(4):</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32350026</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Pathol. 2004 Jun;203(2):631-7</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">15141377</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Sleep Med. 2020 Jun;70:111</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32361215</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMJ. 2020 Mar 26;368:m1091</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32217556</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>N Engl J Med. 2020 Jun 4;382(23):2268-2270</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32294339</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Neurology. 2020 Aug 4;95(5):e601-e605</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32303650</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Schizophr Bull. 2011 Jan;37(1):101-7</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">19491313</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>ACS Chem Neurosci. 2020 Apr 15;11(8):1192-1194</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32233443</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Int J Infect Dis. 2020 May;94:55-58</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32251791</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Rev Psiquiatr Salud Ment. 2020 Apr - Jun;13(2):90-94</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32389516</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Feb 15;395(10223):473-475</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32043983</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Int J Infect Dis. 2020 May;94:91-95</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32173574</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Jul;87:115-119</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32360439</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Ann Transl Med. 2020 Feb;8(4):128</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32175421</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Jul;87:100-106</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32353518</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Neurol. 2020 May;19(5):383-384</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32246917</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet. 2020 Mar 28;395(10229):1047-1053</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32199075</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Crit Care. 2020 Jun;57:279-283</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32173110</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Intern Med. 2020 Sep;288(3):335-344</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32352202</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Clin Neurosci. 2020 Jun;76:233-235</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32312628</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>BMJ. 2020 Apr 20;369:m1461</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32312715</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur J Neurol. 2020 Sep;27(9):1764-1773</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32333487</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Brain Behav Immun. 2020 Aug;88:945-946</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32283294</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Lancet Respir Med. 2020 May;8(5):475-481</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32105632</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Asian J Psychiatr. 2020 Apr;50:102100</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32354694</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>Eur J Neurol. 2020 Sep;27(9):e35-e36</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32352618</ArticleId>
+               </ArticleIdList>
+            </Reference>
+            <Reference>
+               <Citation>J Am Geriatr Soc. 2020 Jul;68(7):1382-1384</Citation>
+               <ArticleIdList>
+                  <ArticleId IdType="pubmed">32383778</ArticleId>
+               </ArticleIdList>
+            </Reference>
+         </ReferenceList>
+      </PubmedData>
+   </PubmedArticle>
+</PubmedArticleSet>
