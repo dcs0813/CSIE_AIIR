@@ -34,20 +34,34 @@ def composeQueryContent( pubmedElement ):
 
 	return articleTitle, abstract, queryContent
 
+# 對兩篇文章的內容文字作逐一比對
 def contentTextCompare( article01, article02 ):
 	compareResult = ''
+	sameWordsCount = 0
 
-	# 對兩篇文章的內容文字作逐一比對
-	for i in range( len( article01 ) ):
-		if i < len( article02 ):
-			if article01[i] == article02[i]:
-				compareResult = compareResult + Fore.WHITE + Back.GREEN + article02[i] + ' '
+	# 分為第一篇文章字數較多或第二篇文章字數較多的情況
+	if len( article01 ) >= len( article02 ):
+		for i in range( len( article01 ) ):
+			if i < len( article02 ):
+				if article01[i] == article02[i]:
+					sameWordsCount = sameWordsCount + 1
+					compareResult = compareResult + Fore.WHITE + Back.GREEN + article02[i] + ' '
+				else:
+					compareResult = compareResult + Fore.WHITE + Back.RED + article02[i] + ' '
 			else:
-				compareResult = compareResult + Fore.WHITE + Back.RED + article02[i] + ' '
-		else:
-			break
+				break
+	else:
+		for i in range( len( article02 ) ):
+			if i < len( article01 ):
+				if article01[i] == article02[i]:
+					sameWordsCount = sameWordsCount + 1
+					compareResult = compareResult + Fore.WHITE + Back.GREEN + article02[i] + ' '
+				else:
+					compareResult = compareResult + Fore.WHITE + Back.RED + article02[i] + ' '
+			else:
+				compareResult = compareResult + Fore.RESET + Back.RESET + article02[i] + ' '
 
-	return compareResult
+	return compareResult, sameWordsCount
 
 #======================================================================================================
 ### 定義內容來源 01
@@ -69,7 +83,7 @@ pbAbstract01 = composedContent01[1]
 ### 定義內容來源 02
 #======================================================================================================
 # 載入文件
-tree02 = ET.parse( './data/dev/test1.xml' )
+tree02 = ET.parse( './data/dev/test3.xml' )
 root02 = tree02.getroot()
 
 pubmedElement02 = []
@@ -78,7 +92,7 @@ for elem02 in root02.iter( 'PubmedArticle' ):
 	pubmedElement02.append( elem02 )
 
 # 取得第二篇文章的 Abstract
-composedContent02 = composeQueryContent( pubmedElement02[0] )
+composedContent02 = composeQueryContent( pubmedElement02[1] )
 pbAbstract02 = composedContent02[1]
 
 #======================================================================================================
@@ -92,6 +106,9 @@ wordsInPBAbstract02 = pbAbstract02.split()
 
 #======================================================================================================
 ### 進行內容比對
+### compareResult[0] ==> compareResult
+### compareResult[1] ==> sameWordsCount
+###
 #======================================================================================================
 compareResult = contentTextCompare( wordsInPBAbstract01, wordsInPBAbstract02 )
 
@@ -102,18 +119,26 @@ compareResult = contentTextCompare( wordsInPBAbstract01, wordsInPBAbstract02 )
 print( '\n' )
 print( '第一篇文章的內容 ==> ' )
 print( pbAbstract01 )
+print( '\n' )
+print( '第一篇文章字數 ==> ' + str( len( wordsInPBAbstract01 ) ) )
 print( '--------------------------------------------------------------------------------------------------------------' )
 
 # 第二篇文章的內容
 print( '\n' )
 print( '第二篇文章的內容 ==> ' )
 print( pbAbstract02 )
+print( '\n' )
+print( '第二篇文章字數 ==> ' + str( len( wordsInPBAbstract02 ) ) )
 print( '--------------------------------------------------------------------------------------------------------------' )
 
 # 逐字比對第二篇文章與第一篇文章內容差異的結果
 print( '\n' )
 print( '逐字比對第二篇文章與第一篇文章內容差異的結果 ==> ' )
-print( compareResult )
+print( compareResult[0] )
 print( '\n' )
+print( Fore.RESET + Back.RESET + '第二篇文章與第一篇相同的字數 ==> ' + str( compareResult[1] ) + '/' + str( len( wordsInPBAbstract02 ) ) )
+print( '\n' )
+print( Fore.RESET + Back.RESET + '第二篇文章與第一篇的相似度為 ==> ' + str( round( compareResult[1]/len( wordsInPBAbstract02 ), 8 ) * 100 ) + '%' )
+print( '\n\n' )
 
 sys.exit()
