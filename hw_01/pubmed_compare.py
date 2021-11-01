@@ -67,7 +67,7 @@ def contentTextCompare( article01, article02 ):
 ### 定義內容來源 01
 #======================================================================================================
 # 載入文件
-tree01 = ET.parse( './data/dev/test1.xml' )
+tree01 = ET.parse( './data/test/test1.xml' )
 root01 = tree01.getroot()
 
 pubmedElement01 = []
@@ -83,7 +83,7 @@ pbAbstract01 = composedContent01[1]
 ### 定義內容來源 02
 #======================================================================================================
 # 載入文件
-tree02 = ET.parse( './data/dev/test3.xml' )
+tree02 = ET.parse( './data/test/test1.xml' )
 root02 = tree02.getroot()
 
 pubmedElement02 = []
@@ -92,7 +92,7 @@ for elem02 in root02.iter( 'PubmedArticle' ):
 	pubmedElement02.append( elem02 )
 
 # 取得第二篇文章的 Abstract
-composedContent02 = composeQueryContent( pubmedElement02[1] )
+composedContent02 = composeQueryContent( pubmedElement02[0] )
 pbAbstract02 = composedContent02[1]
 
 #======================================================================================================

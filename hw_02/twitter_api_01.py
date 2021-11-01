@@ -32,7 +32,7 @@ class TweetMiner():
         'access_token_secret': config('access_token_secret')
     }
     
-    def __init__( self, keys_dict = twitter_keys, api = api, result_limit = 500 ):
+    def __init__( self, keys_dict = twitter_keys, api = api, result_limit = 1000 ):
         
         self.twitter_keys = keys_dict
         
@@ -43,7 +43,7 @@ class TweetMiner():
         self.twitter_keys = keys_dict
         self.result_limit = result_limit
 
-    def mine_user_tweets( self, user = "CNN", mine_rewteets = False, max_pages = 100 ):
+    def mine_user_tweets( self, user = "BBCWorld", mine_rewteets = False, max_pages = 1000 ):
 
         data = []
         last_tweet_id = False
@@ -94,7 +94,7 @@ mined_tweets = miner.mine_user_tweets()
 #======================================================================================================
 ### 將請求結果寫入 CSV 檔保存
 #======================================================================================================
-file = open( './data/20211026_pm_01.csv', 'w', encoding = "utf-8", newline = '' )
+file = open( './data/twitter_data/20211101_pm_01.csv', 'w', encoding = "utf-8", newline = '' )
 csvCursor = csv.writer( file )
 
 csvCursor.writerow( [ 'tweet_id', 'name', 'text', 'created_at', 'favourite_count', 'hashtags' ] )
