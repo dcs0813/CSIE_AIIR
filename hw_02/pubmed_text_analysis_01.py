@@ -3,28 +3,58 @@
 # 載入單一筆 pubmed 資料
 #
 
-import csv
-import datetime
 import glob
-import json
 import matplotlib.pyplot as plt
 import nltk
 import pandas as pd
-import random
 import re
 import sys
-import time
-import tweepy
 
-from decouple import config
 from nltk.corpus import stopwords
 
-'''words = stopwords.words('english')
-print( words )
-sys.exit()'''
+#======================================================================================================
+### 相關函數定義
+#======================================================================================================
+# 取得詞袋與對應詞頻的計數 :: 包含停用詞與標點符號
+def getBagOfWords( content ):
+
+	bagOfWords = {}
+	
+	for text in content:
+		result = nltk.word_tokenize( text )
+		for word in result:
+			if word not in bagOfWords:
+				bagOfWords[word] = 1
+			else:
+				bagOfWords[word] = bagOfWords[word] + 1
+
+	# 將計數用的詞袋依計數重新排序
+	return sorted( bagOfWords.items(), key = lambda x:x[1], reverse = True )
+
+# 取得詞袋與對應詞頻的計數 :: 不包含停用詞與標點符號
+def getBagOfWordsWithoutStopWords( content ):
+	
+	bagOfWords = {}
+
+	for text in content:
+
+		# 去除標點符號 :: string
+		filteredText = re.sub( r'[^a-zA-Z0-9\s]', '', string = text )
+		
+		# 去除停用詞 :: list
+		filteredText = [word for word in nltk.word_tokenize( filteredText ) if word not in stopwords.words( 'english' )]
+		
+		for word in filteredText:
+			if word not in bagOfWords:
+				bagOfWords[word] = 1
+			else:
+				bagOfWords[word] = bagOfWords[word] + 1
+
+	# 將計數用的詞袋依計數重新排序
+	return sorted( bagOfWords.items(), key = lambda x:x[1], reverse = True )
 
 #======================================================================================================
-### 載入檔案、處理不重覆語詞、計算詞頻
+### 載入檔案 & 對內容進行處理
 #======================================================================================================
 # 載入要處理的 pubmed 內容 :: 單一檔案
 df = pd.read_csv( './data/hw2_data/1.csv', encoding='utf8' )
@@ -32,33 +62,24 @@ df = pd.read_csv( './data/hw2_data/1.csv', encoding='utf8' )
 # 去除掉內容為空的部份
 df = df.dropna()
 
-# 只取 abstract 的部份
+# 處理的內容只取 abstract 的部份
 content = df['abstract']
 
-bagOfWords = {}
+# 取得詞袋與對應詞頻的計數 :: 包含停用詞與標點符號
+#sortedBagOfWords = getBagOfWords( content )
 
-for text in content:
-	result = nltk.word_tokenize( text )
-	for word in result:
-		if word not in bagOfWords:
-			bagOfWords[word] = 1
-		else:
-			bagOfWords[word] = bagOfWords[word] + 1
+# 取得詞袋與對應詞頻的計數 :: 不包含停用詞與標點符號
+sortedBagOfWords = getBagOfWordsWithoutStopWords( content )
 
-# 將計數用的詞袋依計數重新排序
-sortedBagOfWords = sorted( bagOfWords.items(), key = lambda x:x[1], reverse = True )
-
-print( len( sortedBagOfWords ) )
-
-#======================================================================================================
-### 預定義相關變數
-#======================================================================================================
-word = list()
-frequency = list()
+# 顯示處理後前 25 名的語詞與其計數
+df01 = pd.DataFrame( sortedBagOfWords )
+print( df01[:25] )
 
 #======================================================================================================
 ### 將 sortedBagOfWords 重組成要餵 matplotlib 的格式
 #======================================================================================================
+word = list()
+frequency = list()
 i = 0
 
 for data in sortedBagOfWords:

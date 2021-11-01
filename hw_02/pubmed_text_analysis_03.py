@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# 載入所有 pubmed 資料
+# 載入所有 pubmed 資料，並加入 Porter’s algorithm
 #
 
 import glob
@@ -11,10 +11,13 @@ import re
 import sys
 
 from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
 
 #======================================================================================================
 ### 載入檔案、處理不重覆語詞、計算詞頻
 #======================================================================================================
+stemmer = PorterStemmer()
+
 dCount = 0
 bagOfWords = {}
 path = "./data/hw2_data/*.csv"
@@ -47,6 +50,9 @@ for fileName in glob.glob( path ):
 			filteredText = [word for word in nltk.word_tokenize( filteredText ) if word not in stopwords.words( 'english' )]
 			
 			for word in filteredText:
+				
+				word = stemmer.stem( word )
+
 				if word not in bagOfWords:
 					bagOfWords[word] = 1
 				else:
