@@ -26,7 +26,7 @@ def most_similar( w2v_model, words, topn ):
 #======================================================================================================
 ### 載入模型並執行函數
 #======================================================================================================
-model = word2vec.Word2Vec.load("./w2v_model/word2vec_dim_200_train_10.model")
+model = word2vec.Word2Vec.load("./w2v_model/word2vec_skipgram_dim_200_train_10.model")
 
 print( most_similar( model, ['COVID19', 'coronavirus', 'vaccine' ], 20 ) )
 

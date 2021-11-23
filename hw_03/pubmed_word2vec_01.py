@@ -79,13 +79,13 @@ model = word2vec.Word2Vec(
     workers = 3,
     epochs = 10,
     window = 3,
-    sg = 0,
+    sg = 1,
     seed = 666,
     batch_words = 10000
 )
 
 # 儲存訓練好的模型
-model.save("./w2v_model/word2vec_dim_200_train_10.model")
+model.save("./w2v_model/word2vec_skipgram_dim_200_train_10.model")
 
 #======================================================================================================
 ### 記錄執行時間 :: 結束
