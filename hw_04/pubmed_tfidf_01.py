@@ -11,7 +11,6 @@ import re
 import sys
 import time
 
-from gensim.models import word2vec
 from nltk.tokenize import sent_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -45,10 +44,11 @@ for fileName in glob.glob( path ):
 
         # 只取 abstract 的部份
         content = df['abstract']
-
+        
         for text in content:
-            # 將分詞後的句子加入到 sentences 變數中
-            sentences.append( text )   
+            if text not in sentences:
+                # 將分詞後的句子加入到 sentences 變數中
+                sentences.append( text )
     else:
         break
 

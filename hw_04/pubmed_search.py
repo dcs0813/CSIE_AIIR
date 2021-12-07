@@ -13,9 +13,7 @@ import sys
 import time
 
 from colorama import init, Fore, Back
-from gensim.models import word2vec
 from nltk.tokenize import sent_tokenize
-from pathlib import Path
 
 #======================================================================================================
 ### Basic Settings
@@ -35,7 +33,7 @@ path = "../hw_02/data/hw2_data/*.csv"
 #======================================================================================================
 # 載入要處理的 pubmed 內容 :: 所有檔案
 for fileName in glob.glob( path ):
-    if dCount < 2:
+    if dCount < 100:
         # 處理計數
         #print( dCount )
         dCount = dCount + 1
@@ -69,7 +67,7 @@ def keyWordsSearch( queryContent, queryText ):
 
 	return matchedResult
 
-
+# 將多個搜尋關鍵字以顏色區隔出來，目前遇到在 render 的時候，會有位移約 20 個字元的問題，加上多重條件判斷，有空再回頭處理
 def searchResultColoredDisplay( queryContent, queryText ):	
 	j = 0
 	result = {}
@@ -106,10 +104,11 @@ def searchResultColoredDisplay( queryContent, queryText ):
 				break'''
 	#print( queryContent )
 	sys.exit()
-	
+
 	# 未完成 …… 尚未採用, 2021/12/7
 	return renderedText + '\r\n'
 
+# 將多個搜尋關鍵字以顏色區隔出來，作業 1 的版本
 def keyWordsSearch002( queryContent, queryText ):
 	# 對內容作特定字詞搜尋
 	result = [i for i in range( len( queryContent ) ) if queryContent.startswith( queryText, i ) ]
@@ -149,16 +148,15 @@ def keyWordsSearch002( queryContent, queryText ):
 
 	return renderedText + Fore.RESET + Back.RESET + '\r'
 
-
 #======================================================================================================
 ### 對組出的內容作關鍵字搜尋
 #====================================================================================================== 
-queryText01 = 'COVID-19'
+queryText01 = 'vaccine'
 
 # 對文章內容作搜尋
 matchedResult01 = keyWordsSearch( sentences, queryText01 )
 
-queryText02 = 'SARS'
+queryText02 = 'mRNA'
 
 # 對文章內容作搜尋
 matchedResult02 = keyWordsSearch( matchedResult01, queryText02 )
@@ -167,10 +165,10 @@ matchedResult02 = keyWordsSearch( matchedResult01, queryText02 )
 ### 載入預訓練好的 tf-idf
 #======================================================================================================
 # 讀取檔案
-dfTDIDF = pd.read_csv( './data/tfidf_20211205am_01.csv', encoding='utf8' )
+dfTDIDF = pd.read_csv( './data/tfidf_20211207am_01.csv', encoding='utf8' )
 
 # 將載入的 csv 中主要文字內容的欄位重新命名
-dfTDIDF.rename( columns={'Unnamed: 0':'content'}, inplace=True )
+dfTDIDF.rename( columns={'Unnamed: 0':'absTitile'}, inplace=True )
 
 # 預定義變數
 qResultIndex = []
@@ -178,10 +176,9 @@ tfidfScore = {}
 
 # 將搜尋結果和載入的 tf-idf 文件作比對及積分計算
 for qResult in matchedResult02:
-	if qResult in dfTDIDF.content.values:
-
+	if qResult in dfTDIDF.absTitile.values:
 		# 取得與搜尋結果相符的 index
-		rowIndex = dfTDIDF.index[dfTDIDF['content'] == qResult ].tolist()
+		rowIndex = dfTDIDF.index[dfTDIDF['absTitile'] == qResult ].tolist()
 		#qResultIndex.append( rowIndex[0] )
 
 		# 取得該 index 對應 row 的 tf-idf 分數加總
@@ -190,6 +187,9 @@ for qResult in matchedResult02:
 		
 		# 將 index 和 score 組成 dict
 		tfidfScore[rowIndex[0]] = score
+
+# 取得搜尋結果的計數
+countSearchResult = len( tfidfScore )
 
 # 將結果依積分排序
 sortedTfidfScore = sorted( tfidfScore.items(), key=lambda x: x[1], reverse = True )
@@ -202,27 +202,36 @@ i = 1
 print( '\r\n' )
 print( '【 搜尋關鍵字 】 :: ' + queryText01 + ', ' + queryText02 )
 print( '\r\n' )
+print( '【 搜尋結果 】 :: 共 ' + str( countSearchResult ) + ' 篇相關內容' )
+print( '\r\n' )
 
 for text in sortedTfidfScore:
-	text = list( text )
-	textIndex = text[0]
-	textScore = text[1]
-	
-	print( '\r' )
-	print( '【 第 ' + str( i ) + '篇 】' )
-	print( '\r' )
-	print( 'Original Index in dfTDIDF ==> ' + str( textIndex ) )
-	print( '\r' )
-	print( 'Score ==> ' + str( textScore ) )
-	print( '\r' )
+	if i <= 6:
+		text = list( text )
+		textIndex = text[0]
+		textScore = text[1]
+		
+		print( '\r' )
+		print( '【 第 ' + str( i ) + '篇 】' )
+		print( '\r' )
+		print( 'Original Index in dfTDIDF ==> ' + str( textIndex ) )
+		print( '\r' )
+		print( 'Score ==> ' + str( textScore ) )
+		print( '\r' )
 
-	queryRender01 = keyWordsSearch002( dfTDIDF['content'][textIndex], queryText01 )
-	queryRender02 = keyWordsSearch002( queryRender01, queryText02 )
-	print( queryRender02 )
+		queryRender01 = keyWordsSearch002( dfTDIDF['absTitile'][textIndex], queryText01 )
+		queryRender02 = keyWordsSearch002( queryRender01, queryText02 )
+		print( queryRender02 )
 
-	print( '\r' )
-	print( '=====================================================================================================================================' )
-	#sys.exit()
-	i = i + 1
+		print( '\r' )
+		print( '=====================================================================================================================================' )
+		
+		#sys.exit()
+		i = i + 1
+
+	else:
+		break
+
+print( '\r\n' )
 
 sys.exit()
