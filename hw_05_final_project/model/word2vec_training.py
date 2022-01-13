@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# AIIR Final Project 01 :: 進行 word2vec 訓練
+# AIIR Final Project :: 進行 word2vec 訓練
 #
 
 import nltk
@@ -24,7 +24,7 @@ sentences = []
 ### 載入檔案、對要訓練的內容作預處理
 #======================================================================================================
 # 讀取檔案
-df = pd.read_csv( "./data/metadata_oct19.csv", encoding='utf8', low_memory=False )
+df = pd.read_csv( "../data/metadata_oct19.csv", encoding='utf8', low_memory=False )
 
 # 只取 abstract 的部份
 content = df['abstract']
