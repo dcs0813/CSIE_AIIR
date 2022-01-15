@@ -9,7 +9,8 @@ import pandas as pd
 import pickle
 import time
 
-from rank_bm25 import BM25Okapi
+from nltk.tokenize import word_tokenize
+from rank_bm25 import *
 
 #======================================================================================================
 ### 函數定義 :: 載入文件，產生搜尋基底內容
@@ -26,7 +27,7 @@ def getQueryContent():
     content = content.dropna()
 
     # 取前 N 筆作為搜尋基底
-    queryContent = content.head( 200 )
+    queryContent = content
 
     return queryContent
 
@@ -39,6 +40,9 @@ start_time = time.time()
 # 讀取 & 建立搜尋基底
 queryContent = getQueryContent()
 
+#words = word_tokenize( queryContent )
+
+
 # 將搜尋基底作簡單的分詞
 tokenizedQueryContent = [content.split(" ") for content in queryContent]
 
@@ -46,7 +50,7 @@ tokenizedQueryContent = [content.split(" ") for content in queryContent]
 bm25 = BM25Okapi( tokenizedQueryContent )
 
 #To save bm25 object
-with open('./bm25_model/bm25_document_200', 'wb') as bm25_result_file:
+with open('./bm25_model/bm25_document_all', 'wb') as bm25_result_file:
     pickle.dump( bm25, bm25_result_file )
 
 #======================================================================================================

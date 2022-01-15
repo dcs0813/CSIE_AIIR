@@ -7,21 +7,12 @@ import os
 import sys
 import pandas as pd
 import pickle
+import sqlite3
 import time
 
 from gensim.models import word2vec
 from nltk.metrics import edit_distance
 from rank_bm25 import BM25Okapi
-
-#======================================================================================================
-### 預定義相關變數
-#======================================================================================================
-# 載入預訓練的 word2vec 模型
-model = word2vec.Word2Vec.load("../model/w2v_model/word2vec_skipgram_dim_200_train_300.model")
-
-# 定義搜尋關鍵字
-queryText01 = 'COVID19'
-queryText02 = 'mRNA'
 
 #======================================================================================================
 ### 函數定義 :: 詞向量最相近的前 N 筆 :: 單筆
@@ -71,56 +62,82 @@ def getQueryContent():
     content = content.dropna()
 
     # 取前 N 筆作為搜尋基底
-    queryContent = content.head( 200 )
+    queryContent = content
 
     return queryContent
 
 #======================================================================================================
-### 函數定義 :: 關鍵字搜尋
+### 函數定義 :: 關鍵字搜尋 :: sqlite3
 #======================================================================================================
-def keyWordsSearch( queryContent, queryText ):
-    matchedResult = []
+def keyWordsSearchSQLite3( dbConn, queryText ):
+    matchedPubmedId = []
+    matchedAbstract = []
     for text in queryText:
-        for content in queryContent:
-            # 對內容作特定字詞搜尋
-            result = [i for i in range( len( content ) ) if content.startswith( text, i ) ]
-            if result != []:
-                matchedResult.append( content )
+        cur = dbConn.cursor()
+        result = cur.execute("select pubmed_id, abstract from metadata_oct19 where abstract like ? limit 1500", ['%'+text+'%'] ).fetchall()
+        for res in result:
+            #print( res[0] )
+            #sys.exit()
+            if res[0] != None and res[0] not in matchedPubmedId:
+                matchedPubmedId.append( res[0] )
+                matchedAbstract.append( res[1] )
 
-    return matchedResult
+    return matchedPubmedId, matchedAbstract
 
 #======================================================================================================
-### 執行
+### 函數定義 :: 檢查資料庫連線是否有建立成功
 #======================================================================================================
-# 讀取 & 建立搜尋基底
-queryContent = getQueryContent()
+def chk_conn( dbConn ):
+     try:
+        dbConn.cursor()
+        return True
+     except Exception as ex:
+        return False
 
+#======================================================================================================
+### 預定義相關變數
+#======================================================================================================
 # 記錄執行時間_開始
 start_time = time.time()
+
+# 載入預訓練的 word2vec 模型
+model = word2vec.Word2Vec.load("../model/w2v_model/word2vec_skipgram_dim_200_train_300.model")
+
+# 定義搜尋關鍵字
+queryText01 = 'covid19'
+queryText02 = 'vaccine'
 
 # 對搜尋字詞作 query expansin
 queryExpansion01 = query_expansion( queryText01 )
 queryExpansion02 = query_expansion( queryText02 )
 
+#======================================================================================================
+### 執行
+#======================================================================================================
+# 建立資料庫連線
+dbConn = sqlite3.connect('aiir.db')
 
+# 執行初步搜尋
+if chk_conn( dbConn ) == True:
+    matchedPubmedId01, matchedAbstract01 = keyWordsSearchSQLite3( dbConn, queryExpansion01 )
+    matchedPubmedId02, matchedAbstract02 = keyWordsSearchSQLite3( dbConn, queryExpansion02 )
+else:
+    print( 'DB connect fail ~' )
+    sys.exit()
 
-# 讀取預訓練的 bm25 模型
-with open('../model/bm25_model/bm25_document_200', 'rb') as bm25ResultFile:
-    bm25 = pickle.load( bm25ResultFile )
+matchedPubmedId = []
 
-query = "covid-19"
-tokenized_query = query.split(" ")
+# 對兩個搜尋結果取交集
+for id01 in matchedPubmedId01:
+    for id02 in matchedPubmedId02:
+        if id01 == id02 :
+            matchedPubmedId.append( id01 )
 
-print( bm25.get_top_n( tokenized_query, queryContent, n=2 ) )
-
-
-# 對文章內容作搜尋
-#matchedResult01 = keyWordsSearch( queryContent, queryExpansion01 )
-
-# 對文章內容作搜尋
-#matchedResult02 = keyWordsSearch( matchedResult01, queryExpansion02 )
-
-#print( len( matchedResult01 ) )
+# 以交集的結果 再回 raw data 取得正式要回傳的資料
+for mPid in matchedPubmedId:
+    cur = dbConn.cursor()
+    result = cur.execute("select pubmed_id, title, abstract, publish_time, authors, journal from metadata_oct19 where pubmed_id = ?", [mPid] ).fetchall()
+    print( result )
 
 #======================================================================================================
 ### 計算執行時間
